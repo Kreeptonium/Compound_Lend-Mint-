@@ -14,7 +14,7 @@ let encoded_tx : Promise<any>;
 export const MintWithErc20Async = async(erc20Token:string,tokenQuantity:number) : Promise<ICompoundMintERC20Result>=> {
 
   // Setting up Ethereum blockchain Node through Infura
-  const web3 = new Web3(process.env.infuraUrlRinkeby);
+  const web3 = new Web3(process.env.infuraUrlRinkeby!);
   //Providing Private Key
   //const activeAccount = web3.eth.accounts.privateKeyToAccount(process.env.PRIVATE_KEY);
   //Setting Contract Address

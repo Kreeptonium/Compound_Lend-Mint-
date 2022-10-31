@@ -11,7 +11,7 @@ let encoded_tx : Promise<any>;
 export const MintAsync = async() : Promise<any>=> {
 
   // Setting up Ethereum blockchain Node through Infura
-  const web3 = new Web3(process.env.infuraUrlRinkeby);
+  const web3 = new Web3(process.env.infuraUrlRinkeby!);
   //Providing Private Key
   //const activeAccount = web3.eth.accounts.privateKeyToAccount(process.env.PRIVATE_KEY);
   //Calling ABI
